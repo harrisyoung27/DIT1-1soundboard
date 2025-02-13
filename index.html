@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah Soundboard</title>
+</head>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        overflow: hidden;
+        text-align: center;
+    }
+    .soundboard {
+        margin: 5px;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 10px;
+        height: 150px;
+        width: 10%;
+    }
+    p {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    main { 
+        display: flex;
+    }
+    button {
+        background-color: white;
+        color: black;
+        height: 30px;
+        width: 50px;
+        border-radius: 5px;
+        transition: transform .2s ease-in-out normal;
+    }
+    button:hover {
+        background-color: blue;
+        color: white;
+        transform: translateY(2px);
+    }
+    button:active {
+        background-color: green;
+        color: black;
+        transform: scale(0.9);
+    }
+    .background {
+        background: url("elijah.jpg");
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: .5;
+    }
+    footer {
+        position: relative;
+        top: 100px;
+        font-size: 11px;
+    }
+</style>
+<body>
+    <div class="background"></div>
+    <h1>DIT 1-1 Soundboard</h1>
+    <p>(Put your volume down, you have been warned. Also, do not spam the button)</p>
+    <main>
+    <div class="soundboard">
+        <p>Masarap manulak ng tao sa bangin<br> - Elijah</p>
+        <button onclick="first()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Eme Eme lang yon<br> - Elijah</p>
+        <button onclick="second()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Hindi nya alam and hindi nya alam<br> - Elijah</p>
+        <button onclick="third()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Sige kwento mo yan<br> - Jessica</p>
+        <button onclick="fourth()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Hatdog na nakatayo<br> - Elijah</p>
+        <button onclick="fifth()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>EUEUAUAUAUAE<br> - Eizel</p>
+        <button onclick="sixth()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Manonood ako ng H*ntai sa TV<br> - President Martin</p>
+        <button onclick="seventh()">Play</button>
+    </div>
+    <div class="soundboard">
+        <p>Mas madaling magparol kaysa mag enroll<br> - Eizel</p>
+        <button onclick="eighth()">Play</button>
+    </div>
+</main>
+<footer>
+    <p><bold>Made by Harris Young</bold></p>
+    <p>ver 0.3 alpha</p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>
